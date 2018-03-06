@@ -1,0 +1,361 @@
+@prefix : <http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3> .
+
+<http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#affectedBy
+:affectedBy rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#decreasesWith
+:decreasesWith rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#generated
+:generated rdf:type owl:ObjectProperty ;
+           rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#hasCapRock
+:hasCapRock rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#hasDepth
+:hasDepth rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#hasPorosity
+:hasPorosity rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#hasReservoirRock
+:hasReservoirRock rdf:type owl:ObjectProperty ;
+                  rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#hasSourceRock
+:hasSourceRock rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#hasTrap
+:hasTrap rdf:type owl:ObjectProperty ;
+         rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#higherThan
+:higherThan rdf:type owl:ObjectProperty ;
+            rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#inContactWith
+:inContactWith rdf:type owl:ObjectProperty ;
+               rdfs:subPropertyOf owl:topObjectProperty ;
+               rdf:type owl:SymmetricProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#increase
+:increase rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#lessThan
+:lessThan rdf:type owl:ObjectProperty ;
+          rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#locatedAbove
+:locatedAbove rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#locatedBelow
+:locatedBelow rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#migratedFrom
+:migratedFrom rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#migratedInto
+:migratedInto rdf:type owl:ObjectProperty ;
+              rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#migratedThrough
+:migratedThrough rdf:type owl:ObjectProperty ;
+                 rdfs:subPropertyOf owl:topObjectProperty .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#trappedInto
+:trappedInto rdf:type owl:ObjectProperty ;
+             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Anticline
+:Anticline rdf:type owl:Class ;
+           rdfs:subClassOf :StructuralTraps .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#CapRock
+:CapRock rdf:type owl:Class ;
+         rdfs:subClassOf :PetroleumSystem ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :inContactWith ;
+                           owl:someValuesFrom :ReservoirRock
+                         ] ,
+                         [ rdf:type owl:Restriction ;
+                           owl:onProperty :locatedAbove ;
+                           owl:someValuesFrom :ReservoirRock
+                         ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Carbonate
+:Carbonate rdf:type owl:Class ;
+           rdfs:subClassOf :ReservoirRock ;
+           owl:disjointWith :Sandstone .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#CarbonateCementDissolved
+:CarbonateCementDissolved rdf:type owl:Class ;
+                          rdfs:subClassOf :Dissolution .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#ChloriteRims
+:ChloriteRims rdf:type owl:Class ;
+              rdfs:subClassOf :ClayCoats .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#ClayCoats
+:ClayCoats rdf:type owl:Class ;
+           rdfs:subClassOf :DiageneticProcesses ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :increase ;
+                             owl:someValuesFrom :Porosity
+                           ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#CombinedTraps
+:CombinedTraps rdf:type owl:Class ;
+               rdfs:subClassOf :Trap .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Depth
+:Depth rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#DiageneticProcesses
+:DiageneticProcesses rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Dissolution
+:Dissolution rdf:type owl:Class ;
+             rdfs:subClassOf :DiageneticProcesses ,
+                             [ rdf:type owl:Restriction ;
+                               owl:onProperty :increase ;
+                               owl:someValuesFrom :Porosity
+                             ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#DolomitizationOfCalciteCement
+:DolomitizationOfCalciteCement rdf:type owl:Class ;
+                               rdfs:subClassOf :DiageneticProcesses ,
+                                               [ rdf:type owl:Restriction ;
+                                                 owl:onProperty :increase ;
+                                                 owl:someValuesFrom :Porosity
+                                               ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#EarlyCementation
+:EarlyCementation rdf:type owl:Class ;
+                  rdfs:subClassOf :DiageneticProcesses ,
+                                  [ rdf:type owl:Restriction ;
+                                    owl:onProperty :increase ;
+                                    owl:someValuesFrom :Porosity
+                                  ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#FaultDependent
+:FaultDependent rdf:type owl:Class ;
+                rdfs:subClassOf :StructuralTraps .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Faults
+:Faults rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#FeldsparGrainDissolved
+:FeldsparGrainDissolved rdf:type owl:Class ;
+                        rdfs:subClassOf :Dissolution .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Hydrocarbons
+:Hydrocarbons rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :migratedFrom ;
+                                owl:someValuesFrom :SourceRock
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :migratedInto ;
+                                owl:someValuesFrom :ReservoirRock
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :migratedThrough ;
+                                owl:someValuesFrom :Faults
+                              ] ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty :trappedInto ;
+                                owl:someValuesFrom :Trap
+                              ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#IlliteRims
+:IlliteRims rdf:type owl:Class ;
+            rdfs:subClassOf :ClayCoats .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#MigrationPath
+:MigrationPath rdf:type owl:Class ;
+               rdfs:subClassOf :PetroleumSystem .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Overpressure
+:Overpressure rdf:type owl:Class ;
+              rdfs:subClassOf [ rdf:type owl:Restriction ;
+                                owl:onProperty :increase ;
+                                owl:someValuesFrom :Porosity
+                              ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#PetroleumSystem
+:PetroleumSystem rdf:type owl:Class ;
+                 owl:disjointUnionOf ( :CapRock
+                                       :ReservoirRock
+                                       :SourceRock
+                                     ) .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Pinchout
+:Pinchout rdf:type owl:Class ;
+          rdfs:subClassOf :StratigraphicTraps .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Porosity
+:Porosity rdf:type owl:Class ;
+          rdfs:subClassOf [ rdf:type owl:Restriction ;
+                            owl:onProperty :affectedBy ;
+                            owl:someValuesFrom :DiageneticProcesses
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :affectedBy ;
+                            owl:someValuesFrom :Overpressure
+                          ] ,
+                          [ rdf:type owl:Restriction ;
+                            owl:onProperty :decreasesWith ;
+                            owl:someValuesFrom :Depth
+                          ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#ReservoirRock
+:ReservoirRock rdf:type owl:Class ;
+               rdfs:subClassOf :PetroleumSystem ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :hasPorosity ;
+                                 owl:someValuesFrom :Porosity
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :inContactWith ;
+                                 owl:someValuesFrom :CapRock
+                               ] ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty :locatedBelow ;
+                                 owl:someValuesFrom :CapRock
+                               ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Sandstone
+:Sandstone rdf:type owl:Class ;
+           rdfs:subClassOf :ReservoirRock ,
+                           [ rdf:type owl:Restriction ;
+                             owl:onProperty :hasPorosity ;
+                             owl:someValuesFrom :Porosity
+                           ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#SourceRock
+:SourceRock rdf:type owl:Class ;
+            rdfs:subClassOf :PetroleumSystem ,
+                            [ rdf:type owl:Restriction ;
+                              owl:onProperty :generated ;
+                              owl:someValuesFrom :Hydrocarbons
+                            ] .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#StratigraphicTraps
+:StratigraphicTraps rdf:type owl:Class ;
+                    rdfs:subClassOf :Trap .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#StructuralTraps
+:StructuralTraps rdf:type owl:Class ;
+                 rdfs:subClassOf :Trap .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#SulfateMineralsDissolved
+:SulfateMineralsDissolved rdf:type owl:Class ;
+                          rdfs:subClassOf :Dissolution .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Trap
+:Trap rdf:type owl:Class ;
+      rdfs:subClassOf :PetroleumSystem .
+
+
+###  http://www.semanticweb.org/pene/ontologies/2017/10/untitled-ontology-3#Truncation
+:Truncation rdf:type owl:Class ;
+            rdfs:subClassOf :StratigraphicTraps .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CapRock
+                :PetroleumSystem
+                :ReservoirRock
+                :SourceRock
+                :Trap
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CapRock
+                :ReservoirRock
+                :SourceRock
+              )
+] .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
