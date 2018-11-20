@@ -1,1 +1,1 @@
-# geologicalRules
+# RewritingLogicRules
