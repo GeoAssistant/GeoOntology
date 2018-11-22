@@ -1,0 +1,19 @@
+[PrefixDeclaration]
+:		http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#
+owl:		http://www.w3.org/2002/07/owl#
+rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
+xml:		http://www.w3.org/XML/1998/namespace
+xsd:		http://www.w3.org/2001/XMLSchema#
+rdfs:		http://www.w3.org/2000/01/rdf-schema#
+xml02dcb944651c4bbfbd97eb35b1d69e37:	http://www.w3.org/XML/1998/namespace#
+
+[SourceDeclaration]
+sourceUri	datasource1
+connectionUrl	
+username	
+password	
+driverClass	
+
+[MappingDeclaration] @collection [[
+]]
+
