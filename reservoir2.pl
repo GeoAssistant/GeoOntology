@@ -1,5 +1,8 @@
-/*Submarine fan has the following components: upperFan, middleFan, lowerfan and basinPlain.Uppefan contains feederChannel(s), middleFan contains
-distributaryChannels, lowerFan contains lobes.*/
+/*Submarine fan has the following components: upperFan, middleFan,
+lowerfan and basinPlain. Uppefan contains feederChannel(s), middleFan
+contains distributaryChannels and overbanks, lowerFan contains lobes
+or shhet sand. Best reservoir potential have channels, lobes and sheet
+sand.*/
 
 
 submarineFan(sf).
@@ -49,7 +52,7 @@ sandstone.
 siltstone.
 mudstone.
 turbiditeFacies(facies(a), [conglomerate, pebblySandstone, pebblyMudstone]).
-turbiditeFacies(facies(b), massiveSandstone).
+turbiditeFacies(facies(b), coarseGrainedSandyTurbidite).
 turbiditeFacies(facies(c), mediumGrainedSandyTurbidites:- [ta, tb, tc, td, te]).
 turbiditeFacies(facies(d), fineGrainedSandyMuddyTurbidites:- [tb, tc, td, te]).
 turbiditeFacies(facies(e), [laminatedSandstone, lenticularSandstone]).
@@ -64,14 +67,21 @@ tb(sandstone, planarParallelLaminae).
 tc([sandstone, siltstone], [ripplesLaminae, wavyLaminae, contortedlaminae]).
 td(siltsone, upperParallelLaminae).
 te(mudstone, [laminated, homogenous]).
+/*If  ta^tb^tc^td^te exit  ->CompleteBoumaSequence.<-> facies c
+If ta or tb or tc or td or te exist -> InompleteBoumaSequence <->
+facies d.*/
 
 /*Lowe Divisions, 1982, Course-Grained Turbidites*/
 
 /*Processes*/
-hdtc.
-ldtc.
-process(facies([b, c, d]), hdtc).
+/*high density tirbidity current - hdtc, low density turbidity current -
+ldtc*/
+
+hdtc. /
+ldtc. /
 process(facies([e,f]), ldtc).
+process(facies([b, c, d]), hdtc).
+/*1 turbidity current-> 1 turbidite*/
 
 finning_upwards(facies([a,b])).
 coarsening_upwards(facies([c,d])).
