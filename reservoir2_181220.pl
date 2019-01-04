@@ -9,16 +9,17 @@
       "Submarine fan" explanation is very good */
 
 /*Submarine fan has the following components: upperFan, middleFan,
-lowerfan and basinPlain. Uppefan contains feederChannel(s), middleFan
-contains distributaryChannels and overbanks, lowerFan contains lobes
-or shhet sand. Best reservoir potential have channels, lobes and sheet
-sand.*/
+lowerfan and basinPlain. Uppefan contains feederChannel(s),channel
+margins, middleFan contains distributaryChannels, overbanks, lowerFan
+contains lobes or sheet sand and lobe fringe. Best reservoir potential
+have channels, lobes and sheetsand.*/
 
 % jeotten: it is not clear yet to me how the following facts are used;
 %          what is the intended meaning
 /*irina:  if you see a channel (on seismic or well logs) it means that you are in upper or middle fan; no channel it means lower fan;
  *  upper fan is close to the source of sediments
- *  lower fan is farther into the basin*/
+ *  lower fan is farther into the basin
+ it help localized them inside the depositional system*/
 
 submarineFan(sf).
 upperFan.
@@ -27,6 +28,7 @@ lowerFan.
 channel.
 feederChannel.
 distributaryChannel.
+channelMargin.
 overbank.
 lobe.
 lobeFringe.
@@ -43,7 +45,14 @@ facies(lobe, c).
 facies(lobeFringe, d).
 facies(overbank, e).
 facies(basinPlain, g).
+/*or better */
 
+facies([upperFan, middleFan], a).
+facies([upperFan, middleFan], b).
+facies([middleFan, lowerFan], c).
+facies(submarineFan, d).
+facies([upperFan, middleFan], e).
+facies(basinPlain, f).
 
 /*ReervoirPotentialClassiffication*/
 %veryGoodReservoirPotential(facies(c), lobe).
@@ -109,7 +118,7 @@ turbiditeFacies(facies(a), [conglomerate, pebblySandstone, pebblyMudstone]).
 turbiditeFacies(facies(b), coarseGrainedSandyTurbidite).
 turbiditeFacies(facies(c), mediumGrainedSandyTurbidites:- [ta, tb, tc, td, te]).
 turbiditeFacies(facies(d), fineGrainedSandyMuddyTurbidites:- [tb, tc, td, te]).
-turbiditeFacies(facies(e), [laminatedSandstone, lenticularSandstone]).
+turbiditeFacies(facies(e), [thinLaminatedSandstone, thinLenticularSandstone, thinMudstone]).
 turbiditeFacies(facies(g), mudstone).
 
 
@@ -122,9 +131,10 @@ turbiditeFacies(facies(g), mudstone).
 ta, tb, and so forth are the standard name for each subdivision of the
 Bouma sequence, each sequence has different porosity and different reservoir potential*/
 
-ta(sandstones, massiveGraded). tb(sandstone,
-planarParallelLaminae). tc([sandstone, siltstone], [ripplesLaminae,
-wavyLaminae, contortedlaminae]). td(siltsone, upperParallelLaminae).
+ta(sandstones, massiveGraded).
+tb(sandstone,planarParallelLaminae).
+tc([sandstone, siltstone], [ripplesLaminae,wavyLaminae, contortedlaminae]).
+td(siltsone, upperParallelLaminae).
 te(mudstone, [laminated, homogenous]).
 /*If  ta^tb^tc^td^te exit  ->CompleteBoumaSequence.<-> facies c
 If ta or tb or tc or td or te exist -> InompleteBoumaSequence <->
@@ -132,8 +142,8 @@ facies d.*/
 
 /*Lowe Divisions, 1982, Course-Grained Turbidites*/
 
-/*Processes*/
-/*high density tirbidity current - hdtc, low density turbidity current -
+/*Processes that are responsible for d4eposition of the submarine fan components:
+high density tirbidity current - hdtc, low density turbidity current -
 ldtc*/
 
 % jeotten: what does this mean?
@@ -141,7 +151,7 @@ hdtc.
 ldtc.
 process(facies([e,f]), ldtc).
 process(facies([b, c, d]), hdtc).
-/*1 turbidity current-> 1 turbidite*/
+/*1 turbidity current-> 1 turbidite; normally thre are many turbidites stacked vertically*/
 
 finning_upwards(facies([a,b])).
 coarsening_upwards(facies([c,d])).
