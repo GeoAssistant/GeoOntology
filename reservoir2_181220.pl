@@ -52,7 +52,7 @@ facies([upperFan, middleFan], b).
 facies([middleFan, lowerFan], c).
 facies(submarineFan, d).
 facies([upperFan, middleFan], e).
-facies(basinPlain, f).
+facies(basinPlain, g).
 
 /*ReervoirPotentialClassiffication*/
 %veryGoodReservoirPotential(facies(c), lobe).
@@ -79,7 +79,7 @@ reservoir_has(r2,lobeFringe).
 goodLateralConectivity(facies(c), lobe).
 
 
-/*Porosity classiffication*/
+/*Depositional Porosity classiffication*/
 %veryGoodPorosity(facies(c), lobe).
 %goodPorosity(facies(b), ch2).
 %moderatePorosity(facies([a,d]), [ch1,lobeFringe]).
@@ -108,6 +108,13 @@ facies_permeability(b,good).
 facies_permeability(a,very_good).
 facies_permeability(d,moderate).
 facies_permeability(g,low).
+
+/*LateralContinuity*/
+goodlateralContinuity(facies(g), basinPlain).
+goodLateralContinuity(facies([d,c]), [lobeFringe, lobe]).
+moderateLateralContinuity(facies(b), ch2).
+poorLateralContinuity(facies(a), ch1).
+poorLateralContinuity(facies(e), overbank).
 
 
 /*Lithology - turbidite facies*/
@@ -151,7 +158,7 @@ hdtc.
 ldtc.
 process(facies([e,f]), ldtc).
 process(facies([b, c, d]), hdtc).
-/*1 turbidity current-> 1 turbidite; normally thre are many turbidites stacked vertically*/
+/*1 turbidity current-> 1 turbidite*/
 
 finning_upwards(facies([a,b])).
 coarsening_upwards(facies([c,d])).
@@ -193,3 +200,7 @@ permeability(c, 100).
 
 /* This examples with porosity and permeability higher were an exersize for me.
 The most important it is to specify that facies c has the highest porosity, facies b has good porosity but lower than gacies c, but facies b has higher permeability that facies c. */
+
+
+/*Channel stacking is a good indicator for vertical and lateral continuity of the reservoir*/
+
