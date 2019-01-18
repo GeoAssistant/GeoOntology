@@ -388,6 +388,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Canyon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Canyon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeomorfologicalFeature"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CoarseningUpward -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CoarseningUpward">
@@ -469,6 +477,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Delta">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceOfSediment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Deltaic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Deltaic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalEnvironment"/>
     </owl:Class>
     
 
