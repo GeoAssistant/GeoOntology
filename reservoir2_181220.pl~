@@ -9,16 +9,17 @@
       "Submarine fan" explanation is very good */
 
 /*Submarine fan has the following components: upperFan, middleFan,
-lowerfan and basinPlain. Uppefan contains feederChannel(s), middleFan
-contains distributaryChannels and overbanks, lowerFan contains lobes
-or shhet sand. Best reservoir potential have channels, lobes and sheet
-sand.*/
+lowerfan and basinPlain. Uppefan contains feederChannel(s),channel
+margins, middleFan contains distributaryChannels, overbanks, lowerFan
+contains lobes or sheet sand and lobe fringe. Best reservoir potential
+have channels, lobes and sheetsand.*/
 
 % jeotten: it is not clear yet to me how the following facts are used;
 %          what is the intended meaning
 /*irina:  if you see a channel (on seismic or well logs) it means that you are in upper or middle fan; no channel it means lower fan;
  *  upper fan is close to the source of sediments
- *  lower fan is farther into the basin*/
+ *  lower fan is farther into the basin
+ it help localized them inside the depositional system*/
 
 submarineFan(sf).
 upperFan.
@@ -27,6 +28,7 @@ lowerFan.
 channel.
 feederChannel.
 distributaryChannel.
+channelMargin.
 overbank.
 lobe.
 lobeFringe.
@@ -43,7 +45,14 @@ facies(lobe, c).
 facies(lobeFringe, d).
 facies(overbank, e).
 facies(basinPlain, g).
+/*or better */
 
+facies([upperFan, middleFan], a).
+facies([upperFan, middleFan], b).
+facies([middleFan, lowerFan], c).
+facies(submarineFan, d).
+facies([upperFan, middleFan], e).
+facies(basinPlain, g).
 
 /*ReervoirPotentialClassiffication*/
 %veryGoodReservoirPotential(facies(c), lobe).
@@ -70,7 +79,7 @@ reservoir_has(r2,lobeFringe).
 goodLateralConectivity(facies(c), lobe).
 
 
-/*Porosity classiffication*/
+/*Depositional Porosity classiffication*/
 %veryGoodPorosity(facies(c), lobe).
 %goodPorosity(facies(b), ch2).
 %moderatePorosity(facies([a,d]), [ch1,lobeFringe]).
@@ -100,6 +109,13 @@ facies_permeability(a,very_good).
 facies_permeability(d,moderate).
 facies_permeability(g,low).
 
+/*LateralContinuity*/
+goodlateralContinuity(facies(g), basinPlain).
+goodLateralContinuity(facies([d,c]), [lobeFringe, lobe]).
+moderateLateralContinuity(facies(b), ch2).
+poorLateralContinuity(facies(a), ch1).
+poorLateralContinuity(facies(e), overbank).
+
 
 /*Lithology - turbidite facies*/
 sandstone.
@@ -109,7 +125,7 @@ turbiditeFacies(facies(a), [conglomerate, pebblySandstone, pebblyMudstone]).
 turbiditeFacies(facies(b), coarseGrainedSandyTurbidite).
 turbiditeFacies(facies(c), mediumGrainedSandyTurbidites:- [ta, tb, tc, td, te]).
 turbiditeFacies(facies(d), fineGrainedSandyMuddyTurbidites:- [tb, tc, td, te]).
-turbiditeFacies(facies(e), [laminatedSandstone, lenticularSandstone]).
+turbiditeFacies(facies(e), [thinLaminatedSandstone, thinLenticularSandstone, thinMudstone]).
 turbiditeFacies(facies(g), mudstone).
 
 
@@ -122,9 +138,10 @@ turbiditeFacies(facies(g), mudstone).
 ta, tb, and so forth are the standard name for each subdivision of the
 Bouma sequence, each sequence has different porosity and different reservoir potential*/
 
-ta(sandstones, massiveGraded). tb(sandstone,
-planarParallelLaminae). tc([sandstone, siltstone], [ripplesLaminae,
-wavyLaminae, contortedlaminae]). td(siltsone, upperParallelLaminae).
+ta(sandstones, massiveGraded).
+tb(sandstone,planarParallelLaminae).
+tc([sandstone, siltstone], [ripplesLaminae,wavyLaminae, contortedlaminae]).
+td(siltsone, upperParallelLaminae).
 te(mudstone, [laminated, homogenous]).
 /*If  ta^tb^tc^td^te exit  ->CompleteBoumaSequence.<-> facies c
 If ta or tb or tc or td or te exist -> InompleteBoumaSequence <->
@@ -132,8 +149,8 @@ facies d.*/
 
 /*Lowe Divisions, 1982, Course-Grained Turbidites*/
 
-/*Processes*/
-/*high density tirbidity current - hdtc, low density turbidity current -
+/*Processes that are responsible for d4eposition of the submarine fan components:
+high density tirbidity current - hdtc, low density turbidity current -
 ldtc*/
 
 % jeotten: what does this mean?
@@ -159,6 +176,8 @@ facies_porosity_higher(A,B):-
 % jeotten: we already have facies_porosity; I would (for now) either
 %          use approx. (high/low/etc) or exact values (20,30,etc)
 %          for facies porosity
+% irina: let's use high, low, moderate instead of values
+%
 porosity(c,30).
 porosity(d,20).
 
@@ -181,3 +200,6 @@ permeability(c, 100).
 
 /* This examples with porosity and permeability higher were an exersize for me.
 The most important it is to specify that facies c has the highest porosity, facies b has good porosity but lower than gacies c, but facies b has higher permeability that facies c. */
+
+
+/*Channel stacking is a good indicator for vertical and lateral continuity of the reservoir*/

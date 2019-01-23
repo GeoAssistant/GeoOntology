@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#" uri="GeoAssisstant%20Ontology%20Step1.owl"/>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#" uri="file:/Z:/Optique/geonto/ontology/GeoscienceOntology.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1544517077272" name="duplicate:http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19" uri="GeoAssisstant%20Ontology%20Step1.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1544517077272" name="duplicate:http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19" uri="GeoAssisstant%20Ontology%20Step%202.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548164166139" name="duplicate:http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19" uri="GeoAssisstant%20Ontology%20Step1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548164166139" name="duplicate:http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19" uri="GeoAssisstant%20Ontology%20Step%202.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1548164166139" name="duplicate:http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19" uri="GeoAssisstant%20Ontology%20Step1and%202%20merged.owl"/>
     </group>
 </catalog>
