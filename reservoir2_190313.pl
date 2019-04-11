@@ -98,6 +98,24 @@ reservoir_has(r3,lobeFringe).
 %
 % Engl: reservoir A has potential B
 % Refs:
+%
+%
+reservoir_potential(GU):-
+    gu_has_facies(GU, FA),
+    facies_porosity(FA, Por),
+    higher_eq(Por, medium),
+    facies_permeability(FA, Perm),
+    higher_eq(Perm, medium),
+    facies_lateral_continuity(FA, LAC),
+    better_eq(LAC, moderate).
+
+gu_has_facies(a).
+gu_has_facies(b).
+gu_has_facies(c).
+gu_has_facies(d).
+gu_has_facies(e).
+gu_has_facies(f).
+gu_has_facies(g).
 
 reservoir_potential(R,very_good) :- reservoir_has(R,lobe).
 reservoir_potential(R,good)      :- reservoir_has(R,ch2).
@@ -241,6 +259,9 @@ better_than(good,moderate).
 better_than(moderate,poor).
 better_than(poor,very_poor).
 
+better_eq(X,X):-!.
+better_eq(X,Y):- better_than(X,Y).
+
 better(X,Y) :- better_than(X,Y), !.
 better(X,Y) :- better_than(X,Z), better(Z,Y).
 
@@ -255,6 +276,9 @@ higher_than(very_high,high).
 higher_than(high,medium).
 higher_than(medium,low).
 higher_than(low,vfaciesery_low).
+
+higher_eq(X, X):- !.
+higher_eq(X, Y):- higher_than(X, Y).
 
 higher(X,Y) :- higher_than(X,Y), !.
 higher(X,Y) :- higher_than(X,Z), higher(Z,Y).
