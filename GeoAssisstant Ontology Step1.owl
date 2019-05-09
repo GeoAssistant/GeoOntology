@@ -120,6 +120,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasContact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasContact">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedAfter -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedAfter">
@@ -464,31 +472,37 @@
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalUnit -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalUnit">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicObject"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#composedOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RockType"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#deformedBy"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicProcesses"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#depositedBy"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalProcesses"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#depositedIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MarineEnvironment"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicObject"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasContact"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Contact"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A volume of rock with distinct characteristics.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeologicalUnit</rdfs:label>
     </owl:Class>
