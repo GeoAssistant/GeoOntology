@@ -296,19 +296,19 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CarrierBed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CarrierBed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CompressionalStress -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CompressionalStress">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DifferentialStresses"/>
         <rdfs:comment>Compressional forces push rocks together. Compressional forces can bend (fold) rocks, or they can cause the rocks to break and slide along the breakage zone, which is called a fault.</rdfs:comment>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Conformity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Conformity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalContact"/>
     </owl:Class>
     
 
@@ -369,14 +369,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DippingUnit">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicContact"/>
     </owl:Class>
     
 
@@ -503,6 +495,12 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Contact"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasRoleOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#CarrierBed"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>A volume of rock with distinct characteristics.</rdfs:comment>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GeologicalUnit</rdfs:label>
     </owl:Class>
@@ -595,19 +593,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NonSealingFault -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MigrationPathway -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NonSealingFault">
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MigrationPathway">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NormalFault -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NonSealingFault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NormalFault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault"/>
-        <rdfs:comment>In a normal fault, the hanging wall moves downward, relative to the footwall.</rdfs:comment>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NonSealingFault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
     </owl:Class>
     
 
@@ -700,15 +697,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Porosity"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReverseFault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReverseFault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault"/>
-        <rdfs:comment>A reverse fault is the opposite of a normal fault—the hanging wall moves up relative to the footwall.</rdfs:comment>
     </owl:Class>
     
 
@@ -840,14 +828,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#StrikeSlipFault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#StrikeSlipFault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#StrikeSlipFaulting -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#StrikeSlipFaulting">
@@ -897,15 +877,6 @@ Thins and streches the crust.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ThrustFault -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ThrustFault">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault"/>
-        <rdfs:comment>dip angle &lt;&lt;45°</rdfs:comment>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TopSeal -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TopSeal">
@@ -949,14 +920,6 @@ Thins and streches the crust.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Unconformity -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Unconformity">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalContact"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Underfilled -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Underfilled">
@@ -973,6 +936,25 @@ Thins and streches the crust.</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Conformity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Conformity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalContact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicObject"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MigrationPathway"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicContact"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1004,6 +986,34 @@ Thins and streches the crust.</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_III">
         <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NormalFault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NormalFault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MigrationPathway"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicContact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReverseFault -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReverseFault">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MigrationPathway"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicContact"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Unconformity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Unconformity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalContact"/>
     </owl:NamedIndividual>
     
 
