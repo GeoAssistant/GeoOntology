@@ -64,6 +64,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#constitutedOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#constitutedOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#contains -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#contains">
@@ -112,6 +120,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedAfter -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedAfter">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedBefore -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedBefore">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasGeologicTime -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasGeologicTime">
@@ -125,6 +149,22 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasGeologicalAge">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasAge"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPermeability -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPermeability">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPorosity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPorosity">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
     </owl:ObjectProperty>
     
 
@@ -221,54 +261,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPermeability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPermeability">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPorosity -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPorosity">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPermeability -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPermeability">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPorosity -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPorosity">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#isRapid -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#isRapid">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#isSlow -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#isSlow">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-    </owl:DatatypeProperty>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -280,18 +272,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Air -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Air">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentTransportAgent"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#AnticlinalTrap -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#AnticlinalTrap">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Trap"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapType"/>
     </owl:Class>
     
 
@@ -300,14 +284,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Anticline">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Burial -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Burial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalProcesses"/>
     </owl:Class>
     
 
@@ -337,14 +313,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Current -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Current">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentTransportAgent"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DeepMarine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DeepMarine">
@@ -364,12 +332,6 @@
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalEnvironment -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalEnvironment"/>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalFeature -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalFeature"/>
     
 
 
@@ -395,6 +357,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DippingUnit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DippingUnit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Fault">
@@ -403,10 +373,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#FaultBlock -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#FaultBlock">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#GeologicalStructure"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#FaultDependentTrap -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#FaultDependentTrap">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Trap"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Filled_to_clay_smear_rupture_point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Filled_to_clay_smear_rupture_point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapFilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Filled_to_sand__juxtaposition_point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Filled_to_sand__juxtaposition_point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapFilling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Filled_to_structural_spill -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Filled_to_structural_spill">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapFilling"/>
     </owl:Class>
     
 
@@ -421,6 +423,14 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicProcesses"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Gas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Gas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
     </owl:Class>
     
 
@@ -485,22 +495,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HighDensityTurbidite -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HighDensityTurbidite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Turbidite"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HighDensityTurbidityCurrent -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HighDensityTurbidityCurrent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbidityCurrent"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons">
@@ -509,30 +503,46 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsGeneration -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsAccumulation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsGeneration">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#requires"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRock"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#requires"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRockRapidBurial"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsAccumulation">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#PetroleumSystemProcesses"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsMigration-Accumulation -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsGeneration -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsMigration-Accumulation">
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsGeneration">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#PetroleumSystemProcesses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#requires"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRock"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsMigration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsMigration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#PetroleumSystemProcesses"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasFormedBefore"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#HydrocarbonsMigration"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Matter"/>
     </owl:Class>
     
 
@@ -546,43 +556,13 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReservoirRock"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPermeability"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPorosity"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#LowDensityTurbidite -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#LowDensityTurbidite">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Turbidite"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#LowDensityTurbidityCurrent -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#LowDensityTurbidityCurrent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbidityCurrent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#LowerFan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#LowerFan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFan"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#constitutedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -601,10 +581,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MiddleFan -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NonSealingFault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MiddleFan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFan"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#NonSealingFault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
     </owl:Class>
     
 
@@ -632,10 +612,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#OrganicMatter -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Oil -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#OrganicMatter">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Matter"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Oil">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#OilAndGas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#OilAndGas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
     </owl:Class>
     
 
@@ -662,12 +650,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Pressure -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Pressure"/>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#PrimaryContact -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#PrimaryContact">
@@ -676,36 +658,34 @@
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RapidBurial -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RapidBurial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Burial"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReservoirRock -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReservoirRock">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#canAccumulate"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#constitutedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPermeability"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Permeability"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasPorosity"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Porosity"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -729,14 +709,6 @@
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicProcesses"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#River -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#River">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentTransportAgent"/>
     </owl:Class>
     
 
@@ -766,20 +738,22 @@
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Sandstone -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Sandstone">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentaryRock"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasRoleOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReservoirRock"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentaryRock"/>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentTransportAgent -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SealingFault -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentTransportAgent"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SealingFault">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
+    </owl:Class>
     
 
 
@@ -801,19 +775,19 @@
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Shale -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Shale">
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentaryRock"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasRoleOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRock"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasRoleOf"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TopSeal"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SedimentaryRock"/>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -835,35 +809,19 @@
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRock -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRock">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#canGenerate"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#generated"/>
-                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
+        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#contains"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#OrganicMatter"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen"/>
             </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRockRapidBurial -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SourceRockRapidBurial">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RapidBurial"/>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#generated"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Hydrocarbons"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -880,28 +838,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#StrikeSlipFaulting">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicProcesses"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFan -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFan">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#depositedIn"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#MarineEnvironment"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalFeature"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFanDeposition -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFanDeposition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalProcesses"/>
     </owl:Class>
     
 
@@ -926,12 +862,6 @@
     <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicStresses -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TectonicStresses"/>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Temperature -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Temperature"/>
     
 
 
@@ -971,19 +901,13 @@ Thins and streches the crust.</rdfs:comment>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#ReservoirRock"/>
             </owl:Restriction>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPermeability"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#hasNoPorosity"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Role"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#constitutedOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>above the reservoir rock</rdfs:comment>
     </owl:Class>
     
@@ -995,44 +919,18 @@ Thins and streches the crust.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Turbidite -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapFilling -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Turbidite">
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#depositedBy"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbidityCurrent"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#depositedIn"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DeepMarine"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#resultOf"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalProcesses"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalFeature"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapFilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Trap"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbiditeDeposition -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapType -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbiditeDeposition">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#DepositionalProcesses"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbidityCurrent -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TurbidityCurrent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Current"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Trap"/>
     </owl:Class>
     
 
@@ -1045,11 +943,54 @@ Thins and streches the crust.</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#UpperFan -->
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Underfilled -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#UpperFan">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#SubmarineFan"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Underfilled">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#TrapFilling"/>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Good_porosity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Good_porosity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Porosity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_I -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_I">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_II -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_II">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_III -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen_type_III">
+        <rdf:type rdf:resource="http://www.semanticweb.org/pene/ontologies/2018/0/untitled-ontology-19#Kerogen"/>
+    </owl:NamedIndividual>
     
 
 
